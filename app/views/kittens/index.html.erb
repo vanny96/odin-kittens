@@ -1,0 +1,7 @@
+<h1>All the Kittens!!</h1>
+<%= link_to "Add Kitten", new_kitten_path %>
+<ul>
+  <%@kittens.each do |kitten| %>
+    <li><%= link_to kitten.name, kitten%> - Age: <%= kitten.age%></li>
+  <%end%>
+</ul>
